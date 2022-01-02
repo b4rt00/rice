@@ -1,17 +1,17 @@
 ## Basic terminal programs
-```
+```sh
 sudo apt install neofetch htop cowsay cmatrix
 ```
 
 
 ## VIMRC
-```
+```sh
 curl https://raw.githubusercontent.com/b4rt00/dotfiles/main/vimrc > .vimrc
 ```
 
 
 ## VIM PLUG
-```
+```sh
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
@@ -21,14 +21,14 @@ In VIM:
 ```
 
 ## ZSH shell
-```
+```sh
 sudo apt install zsh
 sudo chsh -s /usr/bin/zsh root
 sudo chsh -s /usr/bin/zsh b4rt00
 ```
 
 ## Oh My ZSH
-```
+```sh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
@@ -39,18 +39,18 @@ plugins=(zsh-autosuggestions)
 ```
 
 Load new configuration
-```
-$ source .zshrc
+```sh
+source .zshrc
 ```
 
 ## GUI Tools
-```
+```sh
 sudo apt install gedit terminator pcmanfm qutebrowser rofi
 ```
 
 
 ## OpenBox and stuff
-```
+```sh
 sudo apt install openbox obconf lightdm nitrogen lxappearance tint2
 ```
 
@@ -63,7 +63,7 @@ nitrogen --restore
 
 
 ## Wallpaper
-```
+```sh
 wget https://wallpapercave.com/wp/3vZjpA5.jpg -O ~/Pictures/plain.jpg
 wget https://wallpapercave.com/wp/wp5480654.jpg -O ~/Pictures/circle.jpg
 wget https://wallpapercave.com/wp/wp5187908.jpg -O ~/Pictures/wave.jpg
@@ -95,7 +95,7 @@ Insert before `<keybind key="C-A-Left">`
 
 ## Terminator config
 Insert the following content to `~/.config/terminator/config`
-```
+```sh
 [global_config]
 [keybindings]
   go_next = <Super>bracketright
@@ -128,13 +128,13 @@ Insert the following content to `~/.config/terminator/config`
 
 
 ## OpenBox Themes
-```
+```sh
 git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes
 ```
 
 
 ## Tint2 Themes
-```
+```sh
 rm -rf ~/.config/tint2
 git clone https://github.com/addy-dclxvi/tint2-theme-collections ~/.config/tint2 --depth 1
 cp ~/.config/tint2/minima/minima.tint2rc ~/.config/tint2/tint2rc
@@ -163,6 +163,6 @@ vim ~/.config/gtk-3.0/settings.ini
 
 
 ## Numix Icon Theme
-```
+```sh
 sudo apt install numix-icon-theme
 ```
