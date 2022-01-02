@@ -50,8 +50,8 @@ wget https://wallpapercave.com/wp/wp5187908.jpg -O ~/Pictures/wave.jpg
 
 ## Arrow Snap
 In file ~/.config/openbox/rc.xml
-Insert before <keybind key="C-A-Left">
-
+Insert before `<keybind key="C-A-Left">`
+```xml
 <keybind key="W-Left">
   <action name="UnmaximizeFull"/>
   <action name="MaximizeVert"/>
@@ -68,5 +68,4 @@ Insert before <keybind key="C-A-Left">
   </action>
   <action name="MoveToEdgeEast"/>
 </keybind>
-
-
+```
