@@ -108,7 +108,7 @@ Insert the following content to `~/.config/terminator/config`
     background_darkness = 0.85
     background_type = transparent
     cursor_color = "#aaaaaa"
-    font = Hack 11
+    font = monospace 11
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollbar_position = hidden
