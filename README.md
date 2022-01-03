@@ -99,7 +99,7 @@ Insert before `<keybind key="C-A-Left">`
 
 
 ## Terminator config
-Create terminator folder in `.config`.`
+Create terminator folder in `.config`.
 ```sh
 mkdir ~/.config/terminator
 ```
@@ -151,7 +151,6 @@ cp ~/.config/tint2/minima/minima.tint2rc ~/.config/tint2/tint2rc
 
 
 ## GTK Adwaita-Dark
-Run the following script
 ```sh
 sudo apt-get install gnome-themes-extra
 ```
@@ -174,9 +173,7 @@ Bind rofi to the key combination of your choosing by inserting this in `~/.confi
     </action>
 </keybind>
 ```
-Super + Space --> `W-space`
-Alt + Space --> `A-space`
-
+To use `alt` instead of `super` change `W-space` to `A-space`.
 
 Change Rofi theme 
 ```sh
