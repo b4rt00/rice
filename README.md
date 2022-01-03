@@ -61,6 +61,10 @@ tint2 &
 nitrogen --restore
 ```
 
+## Remove unnecessary directories
+```sh
+rm -rf Public Templates Videos Music
+```
 
 ## Wallpaper
 ```sh
@@ -95,6 +99,10 @@ Insert before `<keybind key="C-A-Left">`
 
 
 ## Terminator config
+Create terminator folder in `.config`.`
+```sh
+mkdir ~/.config/terminator
+```
 Insert the following content to `~/.config/terminator/config`
 ```sh
 [global_config]
@@ -131,6 +139,7 @@ Insert the following content to `~/.config/terminator/config`
 ```sh
 git clone https://github.com/addy-dclxvi/openbox-theme-collections ~/.themes
 ```
+Change the theme using `obconf`.
 
 
 ## Tint2 Themes
@@ -157,11 +166,53 @@ Change icon theme using `lxappearance`.
 
 
 ## ROFI
+Bind rofi to the key combination of your choosing by inserting this in `~/.config/openbox/rc.xml`.
+```
+<keybind key="W-space">
+    <action name="Execute">
+        <command>rofi -show drun</command>
+    </action>
+</keybind>
+```
+Super + Space --> `W-space`
+Alt + Space --> `A-space`
+
+
+Change Rofi theme 
+```sh
+rofi-theme-selector
+```
+
 
 ## Obmenu config
-Paste the following file in `location here`
-```xlm
+Paste the following file in `/etc/xdg/openbox/menu.xml`
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Terminal">
+    <action name="Execute"><execute>terminator</execute></action>
+  </item>
+  <item label="Web browser">
+    <action name="Execute"><execute>qutebrowser</execute></action>
+  </item>
+  <item label="File Manager">
+    <action name="Execute"><execute>pcmanfm</execute></action>
+  </item>
+  <item label="Text Editor">
+    <action name="Execute"><execute>gedit</execute></action>
+  </item>
+  <item label="Exit">
+    <action name="Exit" />
+  </item>
+</menu>
+
+</openbox_menu>
 ```
 
 
